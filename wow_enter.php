@@ -35,9 +35,7 @@
                 <?php
                 session_start();
                 if(isset($_POST['id'])){
-                $link = mysql_connect('localhost','root','227227');
-                mysql_select_db("wow",$link);
-                mysql_query('SET NAMES UTF8');
+                include_once("database.php");
                 $person_list = mysql_query('SELECT * FROM `person`',$link);
                 while($row_p = mysql_fetch_object($person_list)){
                     

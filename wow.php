@@ -64,9 +64,7 @@
             <a href = "wow_information.php" target = "_blank">人物信息</a> | <a class = "open_fb" >展开/收缩副本</a></div></h1>
             <?php
             header('Content-Type:text/html;charset = utf8');
-            $link = mysql_connect('localhost','root','227227');
-            mysql_select_db("wow",$link);
-            mysql_query("SET NAMES UTF8");
+            include_once('database.php');
             $fb_list = mysql_query('SELECT DISTINCT Name ,Instruction FROM `FB`',$link);
             while($row = mysql_fetch_object($fb_list)){
                 echo '<h3 class = "bg">',$row->Name,'</h3>';
