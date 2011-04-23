@@ -49,9 +49,6 @@
             <p>人物级数：<?php echo $jishu ?></p>
             <div>
                         <?php 
-                         $link = mysql_connect("localhost","root","227227");
-                         mysql_select_db("wow",$link);
-                         mysql_query('SET NAMES UTF8');
                          echo '<div>';
                          $i = 1;
                          $geteq =  mysql_query('SELECT * FROM `p_e` WHERE `hero` = "'.$_SESSION['hero'].'" ORDER BY `NB` desc',$link);

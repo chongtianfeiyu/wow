@@ -61,7 +61,7 @@
 
          while($row_boss = mysql_fetch_object($boss_list)){
              echo '<div class = "bo">';
-             echo '<img class = "left"src = "/wow/'.$row_boss->Name.'.png" width = "200" height = "300">';
+             echo '<img class = "left"src = "/wow/wow/'.$row_boss->Name.'.png" width = "200" height = "300">';
              echo 'Name: ',$row_boss->Name."</br>";
              echo 'HP: ',$row_boss->HP,'<br>';
              echo 'MP: ',$row_boss->MP,'</br>';

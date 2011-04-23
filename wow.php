@@ -69,7 +69,7 @@
             while($row = mysql_fetch_object($fb_list)){
                 echo '<h3 class = "bg">',$row->Name,'</h3>';
                 echo '<div class = "bolder">';
-                echo '<img class = "left" src = "/wow/'.$row->Name.'.jpg" width = "300" height = "150"">';
+                echo '<img class = "left" src = "/wow/wow/'.$row->Name.'.jpg" width = "300" height = "150"">';
                 echo '副本名称:',$row->Name,'</br>';
                 echo '副本介绍:',$row->Instruction,'</br>副本BOSS:'; 
                 $boss = mysql_query('SELECT Name FROM `boss` WHERE FB="'.$row->Name.'"',$link);

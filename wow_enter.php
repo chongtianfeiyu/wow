@@ -19,7 +19,7 @@
     </head>
     <body>
         <div>
-            <img src = "/wow/wowenter.png"/>
+            <img src = "/wow/wow/wowenter.png"/>
         </div>
         <div class = "tf">
         <form action = "wow_enter.php" method = "post">
